@@ -21,7 +21,7 @@ Either a paid host or free host up to you, for free host I recommend repl.it.
  - express
  - body-parser
  - Jimp
-These packages are **needed** and the script will **not** work without them so make sure to install them.
+\nThese packages are **needed** and the script will **not** work without them so make sure to install them.
 
 3) Run the server, copy the link of the server, and in the Ro-Render Remastered plugin, paste it in the "Http Server" TextBox, then press Inject Scripts (after configuring the other settings as well) and then you can render the map either on Studio, or on the Roblox application with
 other players as well.
