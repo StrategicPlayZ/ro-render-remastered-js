@@ -1,0 +1,57 @@
+-- RUN THIS IN THE COPY OF YOUR GAME NOT IN THE ORIGINAL GAME!!!
+
+print("SETTING UP... PLEASE WAIT.")
+
+pcall(function()
+	game.ReplicatedStorage:ClearAllChildren()
+	game.Lighting:ClearAllChildren()
+	game.ServerStorage:ClearAllChildren()
+	game.ServerScriptService:ClearAllChildren()
+	game.ReplicatedFirst:ClearAllChildren()
+	game.StarterGui:ClearAllChildren()
+	game.StarterPack:ClearAllChildren()
+	game.StarterPlayer.StarterCharacterScripts:ClearAllChildren()
+	game.StarterPlayer.StarterPlayerScripts:ClearAllChildren()
+	game.Teams:ClearAllChildren()
+	game.Lighting.FogEnd = 99999999
+	game.Lighting.Brightness = 2
+end)
+
+local parts = {}
+
+for i,v in pairs(workspace:GetDescendants()) do
+	if (v:IsA("BaseScript")) then
+		v:Destroy()
+	elseif (v:IsA("BasePart")) then
+		if ((v:IsA("UnionOperation")) or (v:IsA("MeshPart"))) then
+			if ((v.CollisionFidelity ~= Enum.CollisionFidelity.Default) and (v.CollisionFidelity ~= Enum.CollisionFidelity.PreciseConvexDecomposition)) then
+				table.insert(parts,v)
+			end
+		elseif (v.Transparency >= 1) then
+			v:Destroy()
+		end
+	end
+end
+
+local n = #parts
+print("NUMBER OF PARTS TO CHANGE COLLISION: "..n)
+print("ESTIMATED TIME TAKEN: "..((n*(1/30))/5))
+
+for i = 3,1,-1 do
+	print("STARTING IN "..i.." SECONDS.")
+	wait(1)
+end
+
+print("STARTED")
+
+for i,v in pairs(parts) do
+	if (i%5 == 0) then
+		wait()
+	end
+	v.CollisionFidelity = Enum.CollisionFidelity.Default
+	print(i.."/"..n.." parts done.")
+end
+
+game:GetService("HttpService").HttpEnabled = true
+
+print("SETTING UP DONE!")
