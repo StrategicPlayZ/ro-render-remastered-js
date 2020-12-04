@@ -20,7 +20,7 @@ Either a paid host or free host up to you, for free host I recommend repl.it.
 
  - express
  - body-parser
- - Jimp
+ - jimp
 
 These packages are **needed** and the script will **not** work without them so make sure to install them.
 
