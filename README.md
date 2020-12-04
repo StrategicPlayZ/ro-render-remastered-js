@@ -1,6 +1,7 @@
-### Make sure to install Node.JS first
+### Make sure to install Node.JS first:
 https://nodejs.org/en/download/
-### How to use 'Local-Version'
+
+### How to use 'Local-Version':
 Use this version if you are going to be rendering the image on your computer and not a web server.
 
 1) Run the correct **Installer** for your operating system. You only need to *run this file once*.
@@ -8,7 +9,7 @@ Use this version if you are going to be rendering the image on your computer and
 
 With this method you **cannot** render the map on the Roblox application. Please use the following method if you want to render it on a Roblox server with multiple players.
 
-### How to use 'Server-Version'
+### How to use 'Server-Version':
 
 Use this version if you are going to be rendering the image on a web server.
 
