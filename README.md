@@ -13,8 +13,8 @@ With this method you **cannot** render the map on the Roblox application. Please
 
 Use this version if you are going to be rendering the image on a web server.
 
-1) Upload everything in the folder "SERVER-VERSION" to the host you will be hosting on.
-Either a paid host or free host up to you, for free host I recommend repl.it.
+1) Upload everything in the folder 'Server-Version' to the host you will be hosting on.
+Either a paid host or free host up to you, for free host I recommend [repl.it](https://repl.it/).
 **Make sure the host supports Node.JS**.
 
 2) Install the following packages on your web server:
