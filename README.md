@@ -1,3 +1,5 @@
+## [OUTDATED. PLEASE USE THE [UPDATED VERSION](https://devforum.roblox.com/t/minimap-render-rorenderv2/965827)]
+
 ### Make sure to install Node.JS first:
 https://nodejs.org/en/download/
 
